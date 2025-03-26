@@ -67,6 +67,8 @@ public class SubseaModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.HasFirstJoined = original.HasFirstJoined;
+			clone.AirLevel = original.AirLevel;
+			clone.MaxAir = original.MaxAir;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -104,6 +106,8 @@ public class SubseaModVariables {
 
 	public static class PlayerVariables {
 		public boolean HasFirstJoined = false;
+		public double AirLevel = 100.0;
+		public double MaxAir = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -113,12 +117,16 @@ public class SubseaModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("HasFirstJoined", HasFirstJoined);
+			nbt.putDouble("AirLevel", AirLevel);
+			nbt.putDouble("MaxAir", MaxAir);
 			return nbt;
 		}
 
 		public void readNBT(Tag tag) {
 			CompoundTag nbt = (CompoundTag) tag;
 			HasFirstJoined = nbt.getBoolean("HasFirstJoined");
+			AirLevel = nbt.getDouble("AirLevel");
+			MaxAir = nbt.getDouble("MaxAir");
 		}
 	}
 
@@ -144,6 +152,8 @@ public class SubseaModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.HasFirstJoined = message.data.HasFirstJoined;
+					variables.AirLevel = message.data.AirLevel;
+					variables.MaxAir = message.data.MaxAir;
 				}
 			});
 			context.setPacketHandled(true);

@@ -61,6 +61,37 @@
           "src/main/resources/data/subsea/functions/teleport.mcfunction"
         ]
       }
+    },
+    {
+      "name": "WaterLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/WaterLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Overlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/client/screens/OverlayOverlay.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -69,6 +100,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "AirLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "100.0"
+    },
+    {
+      "name": "MaxAir",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -81,7 +124,9 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "gui.subsea.overlay.label_air": "Air:"
+    }
   },
   "foldersRoot": {
     "name": "~",
