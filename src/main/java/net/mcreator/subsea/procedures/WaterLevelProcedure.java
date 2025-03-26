@@ -5,7 +5,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.subsea.network.SubseaModVariables;
 
@@ -65,6 +67,8 @@ public class WaterLevelProcedure {
 				}
 			}
 		}
-		return new java.text.DecimalFormat("").format((entity.getCapability(SubseaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SubseaModVariables.PlayerVariables())).AirLevel);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("").format((entity.getCapability(SubseaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SubseaModVariables.PlayerVariables())).AirLevel))), true);
+		return new java.text.DecimalFormat("##.##").format((entity.getCapability(SubseaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SubseaModVariables.PlayerVariables())).AirLevel);
 	}
 }
