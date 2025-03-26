@@ -96,6 +96,12 @@
   ],
   "variable_elements": [
     {
+      "name": "MaxAir",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
       "name": "HasFirstJoined",
       "type": "logic",
       "scope": "player_persistent",
@@ -104,14 +110,8 @@
     {
       "name": "AirLevel",
       "type": "number",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
       "value": "100.0"
-    },
-    {
-      "name": "MaxAir",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
     }
   ],
   "sound_elements": [],
