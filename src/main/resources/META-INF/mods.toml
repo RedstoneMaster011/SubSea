@@ -21,6 +21,12 @@ authors="Lucas Case, MCreator"
     side="BOTH"
 
 
+[[dependencies.subsea]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 # Start of user code block dependencies configuration
