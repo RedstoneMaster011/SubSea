@@ -61,20 +61,6 @@
           "src/main/resources/data/subsea/functions/teleport.mcfunction"
         ]
       }
-    },
-    {
-      "name": "SeaBiome",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "sea_biome",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/subsea/worldgen/configured_feature/sea_biome_tree.json",
-          "src/main/resources/data/subsea/worldgen/placed_feature/sea_biome_tree.json",
-          "src/main/resources/data/subsea/worldgen/biome/sea_biome.json"
-        ]
-      }
     }
   ],
   "variable_elements": [
@@ -95,9 +81,7 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {
-      "biome.subsea.sea_biome": "Sea Biome"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",

@@ -4,7 +4,10 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:SeaBiome"
+        "value": "cold_ocean"
+      },
+      {
+        "value": "deep_cold_ocean"
       }
     ],
     "worldGenType": "Normal world gen",
