@@ -49,6 +49,18 @@
           }
         ]
       }
+    },
+    {
+      "name": "Teleport",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/subsea/functions/teleport.mcfunction"
+        ]
+      }
     }
   ],
   "variable_elements": [

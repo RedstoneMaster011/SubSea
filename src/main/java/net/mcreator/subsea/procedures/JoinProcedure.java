@@ -20,10 +20,13 @@ import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
 import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.commands.CommandFunction;
 
 import net.mcreator.subsea.network.SubseaModVariables;
 
 import javax.annotation.Nullable;
+
+import java.util.Optional;
 
 @Mod.EventBusSubscriber
 public class JoinProcedure {
@@ -65,6 +68,14 @@ public class JoinProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 900000, 4, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 900000, 4, false, false));
+			{
+				Entity _ent = entity;
+				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+					Optional<CommandFunction> _fopt = _ent.getServer().getFunctions().get(new ResourceLocation("subsea:teleport"));
+					if (_fopt.isPresent())
+						_ent.getServer().getFunctions().execute(_fopt.get(), _ent.createCommandSourceStack());
+				}
+			}
 		}
 	}
 }
