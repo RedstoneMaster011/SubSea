@@ -1,1 +1,2 @@
-tp @s ~ ~200 ~
+tp ~ ~200 ~
+gamemode adventure
