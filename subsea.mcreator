@@ -1,8 +1,52 @@
 {
-  "mod_elements": [],
-  "variable_elements": [],
+  "mod_elements": [
+    {
+      "name": "SeaDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sea_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/subsea/dimension_type/sea_dimension.json",
+          "src/main/java/net/mcreator/subsea/world/dimension/SeaDimensionDimension.java",
+          "src/main/resources/data/subsea/dimension/sea_dimension.json"
+        ]
+      }
+    },
+    {
+      "name": "Join",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "join",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/JoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "HasFirstJoined",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {}
