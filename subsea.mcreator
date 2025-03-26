@@ -31,6 +31,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "Effects",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/EffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
