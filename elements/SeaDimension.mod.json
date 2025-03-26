@@ -14,9 +14,9 @@
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
     },
-    "seaLevel": 63,
+    "seaLevel": 130,
     "generateOreVeins": true,
-    "generateAquifers": true,
+    "generateAquifers": false,
     "horizontalNoiseSize": 1,
     "verticalNoiseSize": 2,
     "defaultEffects": "overworld",
