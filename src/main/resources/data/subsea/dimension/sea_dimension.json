@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "deep_cold_ocean",
+          "biome": "subsea:sea_biome",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -363,7 +363,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "deep_cold_ocean"
+                "subsea:sea_biome"
               ]
             },
             "then_run": {
@@ -397,9 +397,9 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
+                              "Name": "minecraft:stripped_cherry_log",
                               "Properties": {
-                                "snowy": "false"
+                                "axis": "y"
                               }
                             }
                           }
@@ -407,7 +407,10 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:gravel"
+                            "Name": "minecraft:acacia_log",
+                            "Properties": {
+                              "axis": "y"
+                            }
                           }
                         }
                       ]
@@ -425,7 +428,13 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "minecraft:waxed_weathered_cut_copper_stairs",
+                        "Properties": {
+                          "facing": "north",
+                          "half": "bottom",
+                          "shape": "straight",
+                          "waterlogged": "false"
+                        }
                       }
                     }
                   }

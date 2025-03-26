@@ -61,6 +61,20 @@
           "src/main/resources/data/subsea/functions/teleport.mcfunction"
         ]
       }
+    },
+    {
+      "name": "SeaBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sea_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/subsea/worldgen/configured_feature/sea_biome_tree.json",
+          "src/main/resources/data/subsea/worldgen/placed_feature/sea_biome_tree.json",
+          "src/main/resources/data/subsea/worldgen/biome/sea_biome.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -74,12 +88,16 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.WAXED_WEATHERED_CUT_COPPER_STAIRS",
+      "~Blocks.STRIPPED_CHERRY_LOG",
       "~Blocks.STONE#0"
     ]
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.subsea.sea_biome": "Sea Biome"
+    }
   },
   "foldersRoot": {
     "name": "~",

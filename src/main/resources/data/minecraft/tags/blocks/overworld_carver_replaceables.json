@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft:waxed_weathered_cut_copper_stairs",
+    "minecraft:stripped_cherry_log",
     "minecraft:stone"
   ]
 }

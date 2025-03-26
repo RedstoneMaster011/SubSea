@@ -4,7 +4,7 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "deep_cold_ocean"
+        "value": "CUSTOM:SeaBiome"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -21,7 +21,7 @@
     "verticalNoiseSize": 2,
     "defaultEffects": "overworld",
     "useCustomEffects": true,
-    "hasClouds": true,
+    "hasClouds": false,
     "cloudHeight": 192.0,
     "skyType": "NONE",
     "sunHeightAffectsFog": false,
