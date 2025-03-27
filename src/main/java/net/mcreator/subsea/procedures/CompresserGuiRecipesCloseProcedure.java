@@ -26,34 +26,21 @@ public class CompresserGuiRecipesCloseProcedure {
 			return;
 		SubseaMod.queueServerWork(2, () -> {
 			if (!(entity instanceof Player _plr0 && _plr0.containerMenu instanceof CompresserGuiRecipesPage1Menu)) {
-				if (entity instanceof ServerPlayer _ent) {
-					BlockPos _bpos = BlockPos.containing(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-						@Override
-						public Component getDisplayName() {
-							return Component.literal("CompresserGui");
-						}
+				if (!(entity instanceof Player _plr1 && _plr1.containerMenu instanceof CommpresserGuiRecipesPage2Menu)) {
+					if (entity instanceof ServerPlayer _ent) {
+						BlockPos _bpos = BlockPos.containing(x, y, z);
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+							@Override
+							public Component getDisplayName() {
+								return Component.literal("CompresserGui");
+							}
 
-						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new CompresserGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-						}
-					}, _bpos);
-				}
-			} else if (!(entity instanceof Player _plr2 && _plr2.containerMenu instanceof CommpresserGuiRecipesPage2Menu)) {
-				if (entity instanceof ServerPlayer _ent) {
-					BlockPos _bpos = BlockPos.containing(x, y, z);
-					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-						@Override
-						public Component getDisplayName() {
-							return Component.literal("CompresserGui");
-						}
-
-						@Override
-						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new CompresserGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-						}
-					}, _bpos);
+							@Override
+							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+								return new CompresserGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							}
+						}, _bpos);
+					}
 				}
 			}
 		});
