@@ -149,6 +149,22 @@
           "y": 95,
           "locked": false
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "?",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenCompresserRecipes"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 131,
+          "y": 41,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.subsea.world.inventory.CompresserGuiMenu;
+import net.mcreator.subsea.procedures.OpenCompresserRecipesProcedure;
 import net.mcreator.subsea.procedures.CompresserCompressProcedure;
 import net.mcreator.subsea.SubseaMod;
 
@@ -65,6 +66,10 @@ public class CompresserGuiButtonMessage {
 		if (buttonID == 0) {
 
 			CompresserCompressProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			OpenCompresserRecipesProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

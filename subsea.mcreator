@@ -306,6 +306,40 @@
           }
         ]
       }
+    },
+    {
+      "name": "OpenCompresserRecipes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_compresser_recipes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/OpenCompresserRecipesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -339,6 +373,7 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "gui.subsea.compresser_gui.button_empty": "?",
       "gui.subsea.compresser_gui.button_compress": "Compress",
       "gui.subsea.commpresser_gui_recipes_page_2.label_compresser": "Compresser Recipes",
       "block.subsea.compresser": "Compresser",

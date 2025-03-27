@@ -1,4 +1,5 @@
 {
+  "gui.subsea.compresser_gui.button_empty": "?",
   "gui.subsea.compresser_gui.button_compress": "Compress",
   "gui.subsea.commpresser_gui_recipes_page_2.label_compresser": "Compresser Recipes",
   "block.subsea.compresser": "Compresser",

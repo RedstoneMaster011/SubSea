@@ -23,6 +23,7 @@ public class CompresserGuiScreen extends AbstractContainerScreen<CompresserGuiMe
 	private final int x, y, z;
 	private final Player entity;
 	Button button_compress;
+	Button button_empty;
 
 	public CompresserGuiScreen(CompresserGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -78,5 +79,13 @@ public class CompresserGuiScreen extends AbstractContainerScreen<CompresserGuiMe
 		}).bounds(this.leftPos + 101, this.topPos + 58, 67, 20).build();
 		guistate.put("button:button_compress", button_compress);
 		this.addRenderableWidget(button_compress);
+		button_empty = Button.builder(Component.translatable("gui.subsea.compresser_gui.button_empty"), e -> {
+			if (true) {
+				SubseaMod.PACKET_HANDLER.sendToServer(new CompresserGuiButtonMessage(1, x, y, z));
+				CompresserGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}).bounds(this.leftPos + 5, this.topPos + 4, 30, 20).build();
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }
