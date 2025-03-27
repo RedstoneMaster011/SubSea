@@ -92,18 +92,6 @@
           "src/main/java/net/mcreator/subsea/client/screens/OverlayOverlay.java"
         ]
       }
-    },
-    {
-      "name": "Config",
-      "type": "config",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "config",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/subsea/configuration/ConfigConfiguration.java"
-        ]
-      }
     }
   ],
   "variable_elements": [
