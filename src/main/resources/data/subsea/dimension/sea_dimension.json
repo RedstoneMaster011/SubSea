@@ -63,7 +63,7 @@
     },
     "settings": {
       "name": "subsea:sea_dimension",
-      "sea_level": 200,
+      "sea_level": 150,
       "legacy_random_source": false,
       "disable_mob_generation": false,
       "aquifers_enabled": true,

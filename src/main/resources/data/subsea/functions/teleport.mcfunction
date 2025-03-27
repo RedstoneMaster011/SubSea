@@ -1,2 +1,2 @@
-tp ~ ~300 ~
+tp ~ ~250 ~
 gamemode adventure

@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "function",
   "definition": {
-    "code": "tp ~ ~300 ~\ngamemode adventure",
+    "code": "tp ~ ~250 ~\ngamemode adventure",
     "name": "teleport",
     "namespace": "mod"
   }
