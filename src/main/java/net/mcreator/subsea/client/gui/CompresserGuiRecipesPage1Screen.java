@@ -66,7 +66,7 @@ public class CompresserGuiRecipesPage1Screen extends AbstractContainerScreen<Com
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_compresser"), 38, 6, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_page_1"), 71, 16, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_oxo1"), 10, 41, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_oxo1"), 8, 40, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_x"), 15, 33, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_x1"), 15, 48, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_x_iron_nugget"), 34, 33, -12829636, false);

@@ -42,7 +42,7 @@ public class OverlayOverlay {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					DeepLevelProcedure.execute(y), w / 2 + -210, h / 2 + 83, -16751002, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.subsea.overlay.label_deep"), w / 2 + -210, h / 2 + 71, -16711681, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.subsea.overlay.label_deep"), w / 2 + -210, h / 2 + 72, -16711681, false);
 		}
 	}
 }
