@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.subsea.init.SubseaModTabs;
+import net.mcreator.subsea.init.SubseaModMenus;
 import net.mcreator.subsea.init.SubseaModItems;
 import net.mcreator.subsea.init.SubseaModBlocks;
 import net.mcreator.subsea.init.SubseaModBlockEntities;
@@ -47,6 +48,8 @@ public class SubseaMod {
 		SubseaModItems.REGISTRY.register(bus);
 
 		SubseaModTabs.REGISTRY.register(bus);
+
+		SubseaModMenus.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

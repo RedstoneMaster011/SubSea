@@ -132,6 +132,19 @@
           "src/main/java/net/mcreator/subsea/block/entity/CompresserBlockEntity.java"
         ]
       }
+    },
+    {
+      "name": "CompresserGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compresser_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/client/gui/CompresserGuiScreen.java",
+          "src/main/java/net/mcreator/subsea/world/inventory/CompresserGuiMenu.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -165,9 +178,11 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "gui.subsea.compresser_gui.button_compress": "Compress",
       "gui.subsea.overlay.label_air": "Air:",
       "gui.subsea.overlay.label_deep": "Deep:",
-      "block.subsea.compresser": "Compresser"
+      "block.subsea.compresser": "Compresser",
+      "gui.subsea.compresser_gui.label_empty": "---\u003e"
     }
   },
   "foldersRoot": {

@@ -106,6 +106,7 @@
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": true,
+    "guiBoundTo": "CompresserGui",
     "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,

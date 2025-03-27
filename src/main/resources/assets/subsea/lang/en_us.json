@@ -1,5 +1,7 @@
 {
+  "gui.subsea.compresser_gui.button_compress": "Compress",
   "gui.subsea.overlay.label_air": "Air:",
   "gui.subsea.overlay.label_deep": "Deep:",
-  "block.subsea.compresser": "Compresser"
+  "block.subsea.compresser": "Compresser",
+  "gui.subsea.compresser_gui.label_empty": "---\u003e"
 }
