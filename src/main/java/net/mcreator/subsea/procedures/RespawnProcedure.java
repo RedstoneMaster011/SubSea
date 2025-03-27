@@ -5,6 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.subsea.network.SubseaModVariables;
@@ -25,13 +26,15 @@ public class RespawnProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			boolean _setval = false;
-			entity.getCapability(SubseaModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.HasFirstJoined = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+		if (Level.OVERWORLD == (entity.level().dimension())) {
+			{
+				boolean _setval = false;
+				entity.getCapability(SubseaModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.HasFirstJoined = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			JoinProcedure.execute(entity);
 		}
-		JoinProcedure.execute(entity);
 	}
 }
