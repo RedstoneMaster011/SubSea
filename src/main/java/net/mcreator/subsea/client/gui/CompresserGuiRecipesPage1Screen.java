@@ -70,13 +70,25 @@ public class CompresserGuiRecipesPage1Screen extends AbstractContainerScreen<Com
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_x"), 15, 33, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_x1"), 15, 48, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_x_iron_nugget"), 34, 33, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_result_iron_ingot"), 34, 46, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_result_iron_ingot"), 32, 46, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty"), 26, 32, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty1"), 26, 40, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty2"), 26, 48, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty3"), 4, 32, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty4"), 4, 40, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty5"), 4, 48, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty6"), 4, 63, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty7"), 4, 73, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty8"), 4, 84, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty9"), 27, 63, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty10"), 27, 73, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_empty11"), 27, 84, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_x2"), 16, 63, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_oxo"), 9, 74, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_o"), 16, 84, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_x_iron_ingot"), 38, 62, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_y_iron_nugget"), 38, 74, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.subsea.compresser_gui_recipes_page_1.label_result_oak_log"), 37, 85, -12829636, false);
 	}
 
 	@Override
