@@ -31,7 +31,7 @@ import io.netty.buffer.Unpooled;
 
 public class CompresserBlock extends Block implements EntityBlock {
 	public CompresserBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f));
 	}
 
 	@Override
