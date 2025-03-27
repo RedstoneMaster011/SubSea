@@ -97,6 +97,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "Respawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "respawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/RespawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
