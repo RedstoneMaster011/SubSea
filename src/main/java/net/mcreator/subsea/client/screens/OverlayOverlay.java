@@ -39,10 +39,10 @@ public class OverlayOverlay {
 
 					WaterLevelProcedure.execute(entity), w / 2 + -210, h / 2 + 107, -16777063, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.subsea.overlay.label_air"), w / 2 + -210, h / 2 + 97, -16776961, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.subsea.overlay.label_deep"), w / 2 + -209, h / 2 + 74, -16711681, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					DeepLevelProcedure.execute(y), w / 2 + -210, h / 2 + 85, -16751002, false);
+					DeepLevelProcedure.execute(y), w / 2 + -210, h / 2 + 83, -16751002, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.subsea.overlay.label_deep"), w / 2 + -210, h / 2 + 71, -16711681, false);
 		}
 	}
 }
