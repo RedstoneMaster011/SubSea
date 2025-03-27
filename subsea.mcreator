@@ -142,7 +142,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/subsea/client/gui/CompresserGuiScreen.java",
-          "src/main/java/net/mcreator/subsea/world/inventory/CompresserGuiMenu.java"
+          "src/main/java/net/mcreator/subsea/world/inventory/CompresserGuiMenu.java",
+          "src/main/java/net/mcreator/subsea/network/CompresserGuiButtonMessage.java"
         ]
       }
     },
@@ -155,6 +156,24 @@
       "metadata": {
         "files": [
           "src/main/resources/data/subsea/recipes/compresser_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CompresserCompress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compresser_compress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/CompresserCompressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       }
     }

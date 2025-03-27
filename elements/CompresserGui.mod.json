@@ -140,6 +140,9 @@
           "name": "button_compress",
           "text": "Compress",
           "isUndecorated": false,
+          "onClick": {
+            "name": "CompresserCompress"
+          },
           "width": 67,
           "height": 20,
           "x": 227,

@@ -10,6 +10,8 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.subsea.world.inventory.CompresserGuiMenu;
+import net.mcreator.subsea.network.CompresserGuiButtonMessage;
+import net.mcreator.subsea.SubseaMod;
 
 import java.util.HashMap;
 
@@ -69,6 +71,10 @@ public class CompresserGuiScreen extends AbstractContainerScreen<CompresserGuiMe
 	public void init() {
 		super.init();
 		button_compress = Button.builder(Component.translatable("gui.subsea.compresser_gui.button_compress"), e -> {
+			if (true) {
+				SubseaMod.PACKET_HANDLER.sendToServer(new CompresserGuiButtonMessage(0, x, y, z));
+				CompresserGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 101, this.topPos + 58, 67, 20).build();
 		guistate.put("button:button_compress", button_compress);
 		this.addRenderableWidget(button_compress);
