@@ -65,9 +65,9 @@ public class JoinProcedure {
 				});
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 900000, 4, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.CONDUIT_POWER, 900000, 2, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 900000, 4, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 900000, 10, false, false));
 			{
 				Entity _ent = entity;
 				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
