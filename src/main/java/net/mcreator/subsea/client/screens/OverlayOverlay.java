@@ -37,7 +37,7 @@ public class OverlayOverlay {
 		if (true) {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					WaterLevelProcedure.execute(entity), w / 2 + -210, h / 2 + 107, -16777063, false);
+					WaterLevelProcedure.execute(world, entity), w / 2 + -210, h / 2 + 107, -16777063, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.subsea.overlay.label_air"), w / 2 + -210, h / 2 + 97, -16776961, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
