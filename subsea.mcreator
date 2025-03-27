@@ -92,6 +92,25 @@
           "src/main/java/net/mcreator/subsea/client/screens/OverlayOverlay.java"
         ]
       }
+    },
+    {
+      "name": "DeepLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/DeepLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -125,7 +144,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "gui.subsea.overlay.label_air": "Air:"
+      "gui.subsea.overlay.label_air": "Air:",
+      "gui.subsea.overlay.label_deep": "Deep:"
     }
   },
   "foldersRoot": {

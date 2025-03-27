@@ -38,6 +38,41 @@
           "y": 217,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_deep",
+          "text": {
+            "fixedValue": "Deep:"
+          },
+          "color": {
+            "value": -16711681,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 4,
+          "y": 194,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_deep_level",
+          "text": {
+            "fixedValue": "",
+            "name": "DeepLevel"
+          },
+          "color": {
+            "value": -16751002,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 3,
+          "y": 205,
+          "locked": false
+        }
       }
     ],
     "baseTexture": "",
