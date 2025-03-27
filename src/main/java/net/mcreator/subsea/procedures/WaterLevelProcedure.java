@@ -65,6 +65,6 @@ public class WaterLevelProcedure {
 				}
 			}
 		}
-		return new java.text.DecimalFormat("#").format((entity.getCapability(SubseaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SubseaModVariables.PlayerVariables())).AirLevel);
+		return new java.text.DecimalFormat("#").format((entity.getCapability(SubseaModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SubseaModVariables.PlayerVariables())).AirLevel) + "s";
 	}
 }
