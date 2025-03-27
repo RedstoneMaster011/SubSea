@@ -99,7 +99,7 @@
       "name": "MaxAir",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "100.0"
     },
     {
       "name": "HasFirstJoined",

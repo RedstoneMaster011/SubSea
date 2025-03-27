@@ -105,7 +105,7 @@ public class SubseaModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double MaxAir = 0;
+		public double MaxAir = 100.0;
 		public boolean HasFirstJoined = false;
 		public double AirLevel = 100.0;
 
