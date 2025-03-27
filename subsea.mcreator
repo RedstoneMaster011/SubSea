@@ -176,6 +176,136 @@
           }
         ]
       }
+    },
+    {
+      "name": "CompresserGuiRecipesPage1",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compresser_gui_recipes_page_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/client/gui/CompresserGuiRecipesPage1Screen.java",
+          "src/main/java/net/mcreator/subsea/world/inventory/CompresserGuiRecipesPage1Menu.java",
+          "src/main/java/net/mcreator/subsea/network/CompresserGuiRecipesPage1ButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "CommpresserGuiRecipesPage2",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "commpresser_gui_recipes_page_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/client/gui/CommpresserGuiRecipesPage2Screen.java",
+          "src/main/java/net/mcreator/subsea/world/inventory/CommpresserGuiRecipesPage2Menu.java",
+          "src/main/java/net/mcreator/subsea/network/CommpresserGuiRecipesPage2ButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "CompresserPage1NextRight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compresser_page_1_next_right",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/CompresserPage1NextRightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CompresserPage2Left",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compresser_page_2_left",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/CompresserPage2LeftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CompresserGuiRecipesClose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compresser_gui_recipes_close",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/subsea/procedures/CompresserGuiRecipesCloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -210,10 +340,17 @@
   "language_map": {
     "en_us": {
       "gui.subsea.compresser_gui.button_compress": "Compress",
-      "gui.subsea.overlay.label_air": "Air:",
-      "gui.subsea.overlay.label_deep": "Deep:",
+      "gui.subsea.commpresser_gui_recipes_page_2.label_compresser": "Compresser Recipes",
       "block.subsea.compresser": "Compresser",
-      "gui.subsea.compresser_gui.label_empty": "---\u003e"
+      "gui.subsea.compresser_gui.label_empty": "---\u003e",
+      "gui.subsea.commpresser_gui_recipes_page_2.button_empty1": "\u003c",
+      "gui.subsea.compresser_gui_recipes_page_1.button_empty": "\u003e",
+      "gui.subsea.compresser_gui_recipes_page_1.label_compresser": "Compresser Recipes",
+      "gui.subsea.commpresser_gui_recipes_page_2.label_page_1": "Page 2",
+      "gui.subsea.overlay.label_air": "Air:",
+      "gui.subsea.commpresser_gui_recipes_page_2.button_empty": "\u003e",
+      "gui.subsea.overlay.label_deep": "Deep:",
+      "gui.subsea.compresser_gui_recipes_page_1.label_page_1": "Page 1"
     }
   },
   "foldersRoot": {

@@ -1,7 +1,14 @@
 {
   "gui.subsea.compresser_gui.button_compress": "Compress",
-  "gui.subsea.overlay.label_air": "Air:",
-  "gui.subsea.overlay.label_deep": "Deep:",
+  "gui.subsea.commpresser_gui_recipes_page_2.label_compresser": "Compresser Recipes",
   "block.subsea.compresser": "Compresser",
-  "gui.subsea.compresser_gui.label_empty": "---\u003e"
+  "gui.subsea.compresser_gui.label_empty": "---\u003e",
+  "gui.subsea.commpresser_gui_recipes_page_2.button_empty1": "\u003c",
+  "gui.subsea.compresser_gui_recipes_page_1.button_empty": "\u003e",
+  "gui.subsea.compresser_gui_recipes_page_1.label_compresser": "Compresser Recipes",
+  "gui.subsea.commpresser_gui_recipes_page_2.label_page_1": "Page 2",
+  "gui.subsea.overlay.label_air": "Air:",
+  "gui.subsea.commpresser_gui_recipes_page_2.button_empty": "\u003e",
+  "gui.subsea.overlay.label_deep": "Deep:",
+  "gui.subsea.compresser_gui_recipes_page_1.label_page_1": "Page 1"
 }
