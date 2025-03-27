@@ -17,6 +17,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.subsea.init.SubseaModTabs;
+import net.mcreator.subsea.init.SubseaModItems;
+import net.mcreator.subsea.init.SubseaModBlocks;
+import net.mcreator.subsea.init.SubseaModBlockEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -36,6 +41,12 @@ public class SubseaMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		SubseaModBlocks.REGISTRY.register(bus);
+		SubseaModBlockEntities.REGISTRY.register(bus);
+		SubseaModItems.REGISTRY.register(bus);
+
+		SubseaModTabs.REGISTRY.register(bus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

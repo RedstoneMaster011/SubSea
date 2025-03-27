@@ -115,6 +115,23 @@
           }
         ]
       }
+    },
+    {
+      "name": "Compresser",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compresser",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/subsea/models/block/compresser.json",
+          "src/main/resources/assets/subsea/models/item/compresser.json",
+          "src/main/java/net/mcreator/subsea/block/CompresserBlock.java",
+          "src/main/resources/data/subsea/loot_tables/blocks/compresser.json",
+          "src/main/resources/assets/subsea/blockstates/compresser.json",
+          "src/main/java/net/mcreator/subsea/block/entity/CompresserBlockEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -149,7 +166,8 @@
   "language_map": {
     "en_us": {
       "gui.subsea.overlay.label_air": "Air:",
-      "gui.subsea.overlay.label_deep": "Deep:"
+      "gui.subsea.overlay.label_deep": "Deep:",
+      "block.subsea.compresser": "Compresser"
     }
   },
   "foldersRoot": {

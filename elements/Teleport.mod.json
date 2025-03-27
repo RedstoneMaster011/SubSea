@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "function",
   "definition": {
-    "code": "tp ~ ~250 ~\nspawnpoint\ngamerule commandBlockOutput false ",
+    "code": "gamerule commandBlockOutput false\ntp ~ ~250 ~\nspawnpoint",
     "name": "teleport",
     "namespace": "mod"
   }

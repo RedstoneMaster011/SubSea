@@ -1,4 +1,5 @@
 {
   "gui.subsea.overlay.label_air": "Air:",
-  "gui.subsea.overlay.label_deep": "Deep:"
+  "gui.subsea.overlay.label_deep": "Deep:",
+  "block.subsea.compresser": "Compresser"
 }

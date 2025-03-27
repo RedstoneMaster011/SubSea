@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "subsea:block/compressertexturebottom",
+    "up": "subsea:block/copressertexturetop",
+    "north": "subsea:block/compressertextureside",
+    "east": "subsea:block/compressertextureside",
+    "south": "subsea:block/compressertextureside",
+    "west": "subsea:block/compressertextureside",
+    "particle": "subsea:block/compressertexturebottom"
+  },
+  "render_type": "solid"
+}
