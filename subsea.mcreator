@@ -140,8 +140,12 @@
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
-    "requiredMods": [],
-    "dependencies": [],
+    "requiredMods": [
+      "geckolib"
+    ],
+    "dependencies": [
+      "geckolib"
+    ],
     "dependants": [],
     "mcreatorDependencies": [
       "geckolib"

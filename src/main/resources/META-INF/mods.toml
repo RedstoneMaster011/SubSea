@@ -20,6 +20,12 @@ authors="Lucas Case, MCreator"
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.subsea]]
+    modId="geckolib"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.subsea]]
     modId="geckolib"
