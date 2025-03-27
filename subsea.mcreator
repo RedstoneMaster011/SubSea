@@ -145,6 +145,18 @@
           "src/main/java/net/mcreator/subsea/world/inventory/CompresserGuiMenu.java"
         ]
       }
+    },
+    {
+      "name": "CompresserRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compresser_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/subsea/recipes/compresser_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
